@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: kmmr
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-zdvi-tenant/byoc-app-hiih/kmmr@sha256:c1709fec99bb12042282336feb6e2cada2efd58f86e990e59258bad6a44d29be
+        name: my-java-quarkus
+        resources: {}
+status: {}
